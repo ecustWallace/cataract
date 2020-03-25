@@ -1,0 +1,4 @@
+/inference/
+/snapshots/
+/train/
+*.pyc
