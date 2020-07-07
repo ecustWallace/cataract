@@ -37,6 +37,7 @@ If you want to train from scratch:
 ` python train.py `
 
 If train from a pre-trained model:
+
 ` python train.py --model {your_model} `
 
 ### Inference
