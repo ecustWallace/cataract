@@ -50,4 +50,4 @@ We can make the inference on any folder that contains the images.
 
 For example:
 
-` python inference_batch.py --data-dir inference/output/train_12+_MP/N3_600_C/ --save-dir 
+` python inference_batch.py --data-dir inference/output/train_12+_MP/N3_600_C/ --save-dir `
