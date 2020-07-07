@@ -34,12 +34,20 @@ Make a directory called ` snapshot ` in the root directory, and then extract thi
 
 If you want to train from scratch:
 
-` python train.py `
+` python train.py`
 
 If train from a pre-trained model:
 
-` python train.py --model {your_model} `
+` python train.py --restore-from {your_model} `
+
+It can be directly changed in `train.py` by changing `RESTORE_FROM`.
 
 ### Inference
 
-` python inference.py --output-dir {your_output_dir} --model {your_model} `
+We can make the inference on any folder that contains the images. 
+
+` python inference_batch.py --data-dir {your_data_dir} --save-dir {your_save_dir} --model {your_model_name} `
+
+For example:
+
+` python inference_batch.py --data-dir 
