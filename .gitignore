@@ -1,4 +1,5 @@
-/inference/
-/snapshots/
-/train/
+inference/
+snapshots/
+train/
 *.pyc
+nohup.out

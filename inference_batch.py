@@ -189,6 +189,7 @@ def main():
 
     count = 1
     for step in range(args.num_steps):
+        a = time.time()
         # Perform inference.
         if step == 0:
             preds = sess.run(pred)
@@ -201,7 +202,7 @@ def main():
         if not os.path.exists(args.save_dir):
             os.makedirs(args.save_dir)
         im.save(args.save_dir + str(count) + '.png')
-
+        print(time.time() - a)
         print('The output file has been saved to {}'.format(args.save_dir + str(count) + 'mask.png'))
         count += 1
     
